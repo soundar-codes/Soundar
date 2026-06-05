@@ -159,14 +159,14 @@ li:hover{
 .exp{
     margin-top:0px;
 }
-.company-content,.project-content{
-    width:1180px;
-    background-color:black;
-    color:white;
-    padding:0px 20px;
-    border:1px grey solid;
-    border-radius:0px 0px 10px 10px;
-    
+.company-content, .project-content {
+    width: 1200px; 
+    background-color: black;
+    color: white;
+    padding: 0px 20px;
+    border: 1px grey solid;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
 }
 .source{
     display:flex;
