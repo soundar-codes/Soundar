@@ -271,3 +271,77 @@ li:hover{
     box-sizing: border-box;
 }
 
+/* /* ========================================================
+   LAPTOP SCREENS (Screens smaller than 1400px)
+   ======================================================== */
+@media (max-width: 1400px) {
+    /* Brings the navigation in slightly */
+    .nav { margin-left: 50px; }
+    .nav2 { right: 50px; }
+
+    /* Changes huge fixed margins to flexible percentages */
+    #aboutme, .skill, #experience, .projects, #aboutmeline {
+        margin-left: 5%;
+    }
+
+    /* Allows the About Me boxes to shrink nicely */
+    .aboutmeclass {
+        padding: 0 5%;
+    }
+    #professionalsummary, #education {
+        width: 48%; 
+    }
+
+    /* Shrinks the 1200px boxes to fit the laptop screen */
+    .company {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .company-content, .project-content {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* ========================================================
+   MOBILE SCREENS (Screens smaller than 768px)
+   ======================================================== */
+@media (max-width: 768px) {
+    /* Stacks the navigation bar vertically */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        background-color: black;
+    }
+    .nav { margin-left: 0; padding-top: 10px; }
+    .nav2 { position: static; margin-top: 15px; right: 0; }
+    .nav2 ul { display: flex; flex-wrap: wrap; justify-content: center; padding: 0; }
+
+    /* Stacks the About Me and Education sections vertically */
+    .aboutmeclass {
+        flex-direction: column;
+        height: auto;
+    }
+    #professionalsummary, #education {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Stacks the Project buttons vertically */
+    .source {
+        flex-direction: column;
+    }
+    .sourcelink {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+} */
+
+
+
+
+
+
