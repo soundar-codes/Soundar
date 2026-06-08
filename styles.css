@@ -1,79 +1,94 @@
-body{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: black;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-.header{
-    display:flex;
-    justify-content:space-between;
-    position:sticky;
-    top:0px;
-    bottom:50px;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    bottom: 50px;
 }
-.nav{
-    color:#00FF41;
-    font-size:25px;
+
+.nav {
+    color: #00FF41;
+    font-size: 25px;
     font-weight: 700;
-    margin-left:200px;
-    padding-top:15px;
-    display:inline-block;
+    margin-left: 200px;
+    padding-top: 15px;
+    display: inline-block;
 
 }
-.nav2{
-    color:#00FF41;
-    display:inline-block;  
-    margin-right:20px; 
-    position:absolute;
-    right:100px;
+
+.nav2 {
+    color: #00FF41;
+    display: inline-block;
+    margin-right: 20px;
+    position: absolute;
+    right: 100px;
 }
-li{
-    display:inline-block;
-    margin-right:20px;
+
+li {
+    display: inline-block;
+    margin-right: 20px;
 }
-li:hover{
-    color:blue;
-    cursor:pointer;
-    transition: 0.5s; 
+
+li:hover {
+    color: blue;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.navigate{
+
+.navigate {
     text-decoration: none;
-    color:#00FF41;
+    color: #00FF41;
 }
-.img{
-    display:flex;
-    justify-content:center;
-    margin-top:90px;
-    object-fit:cover;
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    object-fit: cover;
 }
-#img1{
-    height:240px;
-    width:225px;
-    border-radius:100px;
+
+#img1 {
+    height: 240px;
+    width: 225px;
+    border-radius: 100px;
     opacity: inherit;
-    border:1px #00FF41 solid;
+    border: 1px #00FF41 solid;
 }
+
 #img1:hover {
-  box-shadow: 0 0 20px #00FF41;
-  transition: 0.5s;
+    box-shadow: 0 0 20px #00FF41;
+    transition: 0.5s;
 }
-.content{
-    color:white;
-    width:100%;
+
+.content {
+    color: white;
+    width: 100%;
 }
-#name{
-    text-align:center;
-    font-size:45px;
+
+#name {
+    text-align: center;
+    font-size: 45px;
 }
-#name1{
-    text-align:center;
-    font-size:18px;
+
+#name1 {
+    text-align: center;
+    font-size: 18px;
 }
-#institute{
-    text-align:center;
-    color:#00FF41;
+
+#institute {
+    text-align: center;
+    color: #00FF41;
 }
+
 @keyframes blink {
     50% {
         opacity: 0;
@@ -83,84 +98,108 @@ li:hover{
 .cursor-blink {
     animation: blink 1s step-end infinite;
 }
-#contacttag{
-    color:white;
-    text-align:center;
-    padding-top:25px;
+
+#contacttag {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
 }
-.icons{
+
+.icons {
     /* background-color:green; */
-    margin-top:25px;
-    padding:10px;
+    margin-top: 25px;
+    padding: 10px;
     /* text-align:center; */
-    display:flex;
-    gap:15px;
-    justify-content:center;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
-#linkedinicon,#githubicon{
-    height:30px;
-    width:30px;
+
+#linkedinicon,
+#githubicon {
+    height: 30px;
+    width: 30px;
 }
-#githubicon{
-    height:35px;
-    width:35px;
+
+#githubicon {
+    height: 35px;
+    width: 35px;
 }
-#linkedinicon:hover,#githubicon:hover,#mailicon:hover,#mobileicon:hover{
+
+#linkedinicon:hover,
+#githubicon:hover,
+#mailicon:hover,
+#mobileicon:hover {
     transform: scale(1.1);
     color: #00ffff;
 }
-#aboutme,.skill,#experience,.projects{
-    margin-left:210px;
-    margin-top:120px;
+
+#aboutme,
+.skill,
+#experience,
+.projects {
+    margin-left: 210px;
+    margin-top: 120px;
 }
-#aboutmeline{
-    background-color:#00FF41;
-    height:2px;
-    width:160px;
-    margin-left:210px;
+
+#aboutmeline {
+    background-color: #00FF41;
+    height: 2px;
+    width: 160px;
+    margin-left: 210px;
 }
-#skill-line{
-    background-color:#00FF41;
-    height:2px;
-    width:160px;
+
+#skill-line {
+    background-color: #00FF41;
+    height: 2px;
+    width: 160px;
 }
-.exp{
-    background-color:#00FF41;
-    height:2px;
-    width:130px;
+
+.exp {
+    background-color: #00FF41;
+    height: 2px;
+    width: 130px;
 }
-.pro{
-    background-color:#00FF41;
-    height:2px;
-    width:115px;
+
+.pro {
+    background-color: #00FF41;
+    height: 2px;
+    width: 115px;
 }
-.aboutmeclass{
+
+.aboutmeclass {
     /* background-color:grey; */
-    height:300px;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    align-items:center;
-    margin-top:30px;
-    
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+
 }
-#professionalsummary,#education{
-    height:300px;
-    width:600px;
+
+#professionalsummary,
+#education {
+    height: 300px;
+    width: 600px;
 }
-.company{
-    background-color:#00FF41;
-    padding:2px 2px 2px 20px;
-    border-radius:10px 10px 0px 0px;
-    width:1200px;
-    margin-top:30px;
+
+.company {
+    background-color: #00FF41;
+    padding: 2px 2px 2px 20px;
+    border-radius: 10px 10px 0px 0px;
+    width: 1200px;
+    margin-top: 30px;
 }
-.exp{
-    margin-top:0px;
+
+.exp {
+    margin-top: 0px;
 }
-.company-content, .project-content {
-    width: 1200px; 
+
+.company-content,
+.project-content {
+    width: 1200px;
     background-color: black;
     color: white;
     padding: 0px 20px;
@@ -168,54 +207,66 @@ li:hover{
     border-top: none;
     border-radius: 0px 0px 10px 10px;
 }
-.source{
-    display:flex;
-    justify-content:space-between;   
-}
-.sourcelink{
-    margin:10px;
-    padding:10px;
-    border-radius:10px;
-    background-color:#00FF41;
-}
-.sourcelink:hover{
-    cursor:pointer;
+
+.source {
+    display: flex;
+    justify-content: space-between;
 }
 
-.company-line{
-    background-color:grey;
-    height:1px;
-    width:100%;
-    margin-bottom:10px;
+.sourcelink {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #00FF41;
 }
-#prof,#edu{
-    background-color:#00FF41;
-    padding:18px;
-    border-radius:10px 10px 0px 0px;
-    margin-bottom:0px;
+
+.sourcelink:hover {
+    cursor: pointer;
 }
-#prof-para,.edu-para{
-    background-color:black;
-    color:white;
-    padding:18px;
-    margin-top:0px;
-    border:1px grey solid;
-    border-radius:0px 0px 10px 10px;
+
+.company-line {
+    background-color: grey;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 10px;
 }
+
+#prof,
+#edu {
+    background-color: #00FF41;
+    padding: 18px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+}
+
+#prof-para,
+.edu-para {
+    background-color: black;
+    color: white;
+    padding: 18px;
+    margin-top: 0px;
+    border: 1px grey solid;
+    border-radius: 0px 0px 10px 10px;
+}
+
 .edu-content {
-    border-left: 3px solid #00b8ff; 
-    padding:0px 0px 0px 10px;  
+    border-left: 3px solid #00b8ff;
+    padding: 0px 0px 0px 10px;
 }
-#edu-content2{
-    margin-top:20px;
+
+#edu-content2 {
+    margin-top: 20px;
 
 }
-.skill{
-    margin-top:100px;
+
+.skill {
+    margin-top: 100px;
 }
-.skill-class{
-  overflow: hidden;
+
+.skill-class {
+    overflow: hidden;
 }
+
 .skill-badge {
     padding: 10px 25px;
     background: #10b9810d;
@@ -227,43 +278,51 @@ li:hover{
     transition: all .3s ease;
     white-space: nowrap;
 }
+
 .skills-track {
     display: flex;
     gap: 2rem;
     animation: scroll 10s linear infinite;
     white-space: nowrap;
-    margin:30px;
-    position:relative;
+    margin: 30px;
+    position: relative;
 }
+
 @keyframes scroll {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-80%);
     }
 }
-.point{
-    background-color:white;
-    height:6px;
-    width:6px;
-    border-radius:10px;
-    display:inline-block;
-    margin-right:10px;
+
+.point {
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
-.footer{
-    margin-top:190px;
+
+.footer {
+    margin-top: 190px;
 }
-.footerline{
-    background-color:grey;
-    height:1px;
-    width:100%;
-    margin-bottom:10px;
+
+.footerline {
+    background-color: grey;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 10px;
 }
-.footercontent{
-    color:white;
-    text-align:center;
+
+.footercontent {
+    color: white;
+    text-align: center;
 }
+
 /* ========================================================
    GLOBAL FIX: Prevents borders/padding from breaking widths
    ======================================================== */
@@ -275,12 +334,22 @@ li:hover{
    LAPTOP SCREENS (Screens smaller than 1400px)
    ======================================================== */
 @media (max-width: 1400px) {
+
     /* Brings the navigation in slightly */
-    .nav { margin-left: 50px; }
-    .nav2 { right: 50px; }
+    .nav {
+        margin-left: 50px;
+    }
+
+    .nav2 {
+        right: 50px;
+    }
 
     /* Changes huge fixed margins to flexible percentages */
-    #aboutme, .skill, #experience, .projects, #aboutmeline {
+    #aboutme,
+    .skill,
+    #experience,
+    .projects,
+    #aboutmeline {
         margin-left: 5%;
     }
 
@@ -288,8 +357,10 @@ li:hover{
     .aboutmeclass {
         padding: 0 5%;
     }
-    #professionalsummary, #education {
-        width: 48%; 
+
+    #professionalsummary,
+    #education {
+        width: 48%;
     }
 
     /* Shrinks the 1200px boxes to fit the laptop screen */
@@ -297,7 +368,9 @@ li:hover{
         width: 90%;
         margin-left: 5%;
     }
-    .company-content, .project-content {
+
+    .company-content,
+    .project-content {
         width: 90%;
         margin-left: 5%;
     }
@@ -307,6 +380,7 @@ li:hover{
    MOBILE SCREENS (Screens smaller than 768px)
    ======================================================== */
 @media (max-width: 768px) {
+
     /* Stacks the navigation bar vertically */
     .header {
         flex-direction: column;
@@ -314,16 +388,33 @@ li:hover{
         position: static;
         background-color: black;
     }
-    .nav { margin-left: 0; padding-top: 10px; }
-    .nav2 { position: static; margin-top: 15px; right: 0; }
-    .nav2 ul { display: flex; flex-wrap: wrap; justify-content: center; padding: 0; }
+
+    .nav {
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    .nav2 {
+        position: static;
+        margin-top: 15px;
+        right: 0;
+    }
+
+    .nav2 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
 
     /* Stacks the About Me and Education sections vertically */
     .aboutmeclass {
         flex-direction: column;
         height: auto;
     }
-    #professionalsummary, #education {
+
+    #professionalsummary,
+    #education {
         width: 100%;
         height: auto;
         margin-bottom: 20px;
@@ -333,15 +424,10 @@ li:hover{
     .source {
         flex-direction: column;
     }
+
     .sourcelink {
         width: 100%;
         margin-left: 0;
         margin-bottom: 10px;
     }
-} */
-
-
-
-
-
-
+}
