@@ -1,433 +1,459 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: black;
-    margin: 0;
-    overflow-x: hidden;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+    background-color:black;
+    margin:0;
+    overflow-x:hidden;
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: black;
-    min-height: 65px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background-color:black;
+    min-height:65px;
+    width:100%;
 }
 
 .nav {
-    color: #00FF41;
-    font-size: 25px;
-    font-weight: 700;
-    margin-left: 200px;
-    padding-top: 15px;
-    display: inline-block;
+    color:#00FF41;
+    font-size:25px;
+    font-weight:700;
+    margin-left:6%;
+    padding-top:15px;
 }
 
 .nav2 {
-    color: #00FF41;
-    display: inline-block;
-    margin-right: 100px;
+    color:#00FF41;
+    margin-right:6%;
 }
 
 .nav2 ul {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 li {
-    display: inline-block;
-    margin-right: 20px;
+    display:inline-block;
+    margin-right:20px;
 }
 
 li:hover {
-    color: blue;
-    cursor: pointer;
-    transition: 0.5s;
+    color:blue;
+    cursor:pointer;
+    transition:0.5s;
 }
 
 .navigate {
-    text-decoration: none;
-    color: #00FF41;
+    text-decoration:none;
+    color:#00FF41;
 }
 
 .img {
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
-    object-fit: cover;
+    display:flex;
+    justify-content:center;
+    margin-top:90px;
 }
 
 #img1 {
-    height: 240px;
-    width: 225px;
-    border-radius: 100px;
-    opacity: inherit;
-    border: 1px #00FF41 solid;
+    height:240px;
+    width:225px;
+    border-radius:100px;
+    border:1px #00FF41 solid;
 }
 
 #img1:hover {
-    box-shadow: 0 0 20px #00FF41;
-    transition: 0.5s;
+    box-shadow:0 0 20px #00FF41;
+    transition:0.5s;
 }
 
 .content {
-    color: white;
-    width: 100%;
+    color:white;
+    width:100%;
 }
 
 #name {
-    text-align: center;
-    font-size: 45px;
+    text-align:center;
+    font-size:45px;
 }
 
 #name1 {
-    text-align: center;
-    font-size: 18px;
+    text-align:center;
+    font-size:18px;
 }
 
 #institute {
-    text-align: center;
-    color: #00FF41;
+    text-align:center;
+    color:#00FF41;
 }
 
 @keyframes blink {
     50% {
-        opacity: 0;
+        opacity:0;
     }
 }
 
 .cursor-blink {
-    animation: blink 1s step-end infinite;
+    animation:blink 1s step-end infinite;
 }
 
 #contacttag {
-    color: white;
-    text-align: center;
-    padding-top: 25px;
+    color:white;
+    text-align:center;
+    padding-top:25px;
 }
 
 .icons {
-    margin-top: 25px;
-    padding: 10px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+    margin-top:25px;
+    padding:10px;
+    display:flex;
+    gap:15px;
+    justify-content:center;
 }
 
 #linkedinicon,
 #githubicon {
-    height: 30px;
-    width: 30px;
+    height:30px;
+    width:30px;
 }
 
 #githubicon {
-    height: 35px;
-    width: 35px;
+    height:35px;
+    width:35px;
 }
 
 #linkedinicon:hover,
 #githubicon:hover,
 #mailicon:hover,
 #mobileicon:hover {
-    transform: scale(1.1);
-    color: #00ffff;
+    transform:scale(1.1);
+    color:#00ffff;
 }
+
+/* MAIN SECTIONS */
 
 #aboutme,
 .skill,
 #experience,
 .projects {
-    margin-left: 210px;
-    margin-top: 120px;
+    width:90%;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:120px;
 }
 
 #aboutmeline {
-    background-color: #00FF41;
-    height: 2px;
-    width: 160px;
-    margin-left: 210px;
+    background-color:#00FF41;
+    height:2px;
+    width:160px;
 }
 
 #skill-line {
-    background-color: #00FF41;
-    height: 2px;
-    width: 160px;
+    background-color:#00FF41;
+    height:2px;
+    width:160px;
 }
 
 .exp {
-    background-color: #00FF41;
-    height: 2px;
-    width: 130px;
+    background-color:#00FF41;
+    height:2px;
+    width:130px;
 }
 
 .pro {
-    background-color: #00FF41;
-    height: 2px;
-    width: 115px;
+    background-color:#00FF41;
+    height:2px;
+    width:115px;
 }
 
 .aboutmeclass {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    margin-top: 30px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    align-items:stretch;
+    margin-top:30px;
 }
 
 #professionalsummary,
 #education {
-    height: 300px;
-    width: 600px;
-}
-
-.company {
-    background-color: #00FF41;
-    padding: 2px 2px 2px 20px;
-    border-radius: 10px 10px 0px 0px;
-    width: 1200px;
-    margin-top: 30px;
-}
-
-.exp {
-    margin-top: 0px;
-}
-
-.company-content,
-.project-content {
-    width: 1200px;
-    background-color: black;
-    color: white;
-    padding: 0px 20px;
-    border: 1px grey solid;
-    border-top: none;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.source {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sourcelink {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #00FF41;
-}
-
-.sourcelink:hover {
-    cursor: pointer;
-}
-
-.company-line {
-    background-color: grey;
-    height: 1px;
-    width: 100%;
-    margin-bottom: 10px;
+    width:50%;
+    min-width:0;
 }
 
 #prof,
 #edu {
-    background-color: #00FF41;
-    padding: 18px;
-    border-radius: 10px 10px 0px 0px;
-    margin-bottom: 0px;
+    background-color:#00FF41;
+    padding:18px;
+    border-radius:10px 10px 0 0;
+    margin-bottom:0;
 }
 
 #prof-para,
 .edu-para {
-    background-color: black;
-    color: white;
-    padding: 18px;
-    margin-top: 0px;
-    border: 1px grey solid;
-    border-radius: 0px 0px 10px 10px;
+    background-color:black;
+    color:white;
+    padding:18px;
+    margin-top:0;
+    border:1px grey solid;
+    border-radius:0 0 10px 10px;
 }
 
 .edu-content {
-    border-left: 3px solid #00b8ff;
-    padding: 0px 0px 0px 10px;
+    border-left:3px solid #00b8ff;
+    padding:0 0 0 10px;
 }
 
 #edu-content2 {
-    margin-top: 20px;
+    margin-top:20px;
 }
 
-.skill {
-    margin-top: 100px;
-    overflow: hidden;
+/* EXPERIENCE / PROJECTS */
+
+.company {
+    background-color:#00FF41;
+    padding:2px 20px;
+    border-radius:10px 10px 0 0;
+    width:100%;
+    margin-top:30px;
 }
 
-.skill-class {
-    width: 100%;
-    overflow: hidden;
+.company-content,
+.project-content {
+    width:100%;
+    background-color:black;
+    color:white;
+    padding:0 20px 20px;
+    border:1px grey solid;
+    border-top:none;
+    border-radius:0 0 10px 10px;
 }
 
-.skill-badge {
-    padding: 10px 25px;
-    background: #10b9810d;
-    border: 1px solid rgba(0, 255, 65, .2);
-    color: #00FF41;
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    cursor: default;
-    transition: all .3s ease;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.skills-track {
-    display: flex;
-    gap: 2rem;
-    white-space: nowrap;
-    margin: 30px 0;
-    position: relative;
-
-    /* FIX: keep the complete skill list inside the page */
-    transform: translateX(0);
-    animation: none;
-    flex-wrap: wrap;
-    row-gap: 15px;
+.company-line {
+    background-color:grey;
+    height:1px;
+    width:100%;
+    margin-bottom:10px;
 }
 
 .point {
-    background-color: white;
-    height: 6px;
-    width: 6px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-right: 10px;
+    background-color:white;
+    height:6px;
+    width:6px;
+    border-radius:10px;
+    display:inline-block;
+    margin-right:10px;
 }
 
+.source {
+    display:flex;
+    justify-content:space-between;
+}
+
+.sourcelink {
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    background-color:#00FF41;
+}
+
+.sourcelink:hover {
+    cursor:pointer;
+}
+
+/* SKILLS */
+
+.skill {
+    overflow:hidden;
+}
+
+.skill-class {
+    width:100%;
+    overflow:hidden;
+}
+
+.skills-track {
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    width:100%;
+    margin:30px 0;
+}
+
+.skill-badge {
+    padding:10px 25px;
+    background:#10b9810d;
+    border:1px solid rgba(0,255,65,.2);
+    color:#00FF41;
+    font-size:1rem;
+    cursor:default;
+    transition:all .3s ease;
+    white-space:nowrap;
+}
+
+.skill-badge:hover {
+    border-color:#00FF41;
+    box-shadow:0 0 10px rgba(0,255,65,.2);
+}
+
+/* FOOTER */
+
 .footer {
-    margin-top: 190px;
+    margin-top:190px;
 }
 
 .footerline {
-    background-color: grey;
-    height: 1px;
-    width: 100%;
-    margin-bottom: 10px;
+    background-color:grey;
+    height:1px;
+    width:100%;
+    margin-bottom:10px;
 }
 
 .footercontent {
-    color: white;
-    text-align: center;
+    color:white;
+    text-align:center;
 }
 
-/* ========================================================
-   LAPTOP SCREENS
-   ======================================================== */
+/* LAPTOP */
 
-@media (max-width: 1400px) {
+@media (max-width:1400px) {
 
     .nav {
-        margin-left: 50px;
+        margin-left:5%;
     }
 
     .nav2 {
-        margin-right: 50px;
+        margin-right:5%;
     }
 
     #aboutme,
     .skill,
     #experience,
     .projects {
-        margin-left: 5%;
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+/* TABLET */
+
+@media (max-width:768px) {
+
+    .header {
+        flex-direction:column;
+        position:static;
     }
 
-    #aboutmeline {
-        margin-left: 5%;
+    .nav {
+        margin-left:0;
+        padding-top:10px;
+    }
+
+    .nav2 {
+        margin:15px 0 0;
+    }
+
+    .nav2 ul {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:5px;
+    }
+
+    li {
+        margin-right:10px;
+    }
+
+    #name {
+        font-size:35px;
+    }
+
+    #aboutme,
+    .skill,
+    #experience,
+    .projects {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .aboutmeclass {
-        padding: 0 5%;
+        flex-direction:column;
     }
 
     #professionalsummary,
     #education {
-        width: 48%;
+        width:100%;
     }
 
-    .company {
-        width: 90%;
-        margin-left: 5%;
+    .source {
+        flex-direction:column;
+    }
+
+    .sourcelink {
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .skills-track {
+        gap:10px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px) {
+
+    .nav2 ul {
+        gap:8px;
+    }
+
+    li {
+        margin-right:5px;
+        font-size:13px;
+    }
+
+    #img1 {
+        width:190px;
+        height:205px;
+    }
+
+    #name {
+        font-size:28px;
+    }
+
+    #name1 {
+        font-size:16px;
+    }
+
+    #institute {
+        font-size:12px;
+        padding:0 15px;
+    }
+
+    #aboutme,
+    .skill,
+    #experience,
+    .projects {
+        width:92%;
+        margin-top:80px;
     }
 
     .company-content,
     .project-content {
-        width: 90%;
-        margin-left: 5%;
-    }
-}
-
-/* ========================================================
-   TABLET / MOBILE
-   ======================================================== */
-
-@media (max-width: 768px) {
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        position: static;
-        background-color: black;
-    }
-
-    .nav {
-        margin-left: 0;
-        padding-top: 10px;
-    }
-
-    .nav2 {
-        margin-top: 15px;
-        margin-right: 0;
-    }
-
-    .nav2 ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .aboutmeclass {
-        flex-direction: column;
-        height: auto;
-    }
-
-    #professionalsummary,
-    #education {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .source {
-        flex-direction: column;
-    }
-
-    .sourcelink {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .skills-track {
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 30px 0;
+        padding:0 15px 15px;
     }
 }
