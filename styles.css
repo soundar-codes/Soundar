@@ -1,11 +1,7 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-        sans-serif;
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: black;
     margin: 0;
-
     overflow-x: hidden;
 }
 
@@ -17,41 +13,30 @@ html {
     box-sizing: border-box;
 }
 
-
-/* =========================
-   HEADER
-========================= */
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: sticky;
     top: 0;
-
     z-index: 1000;
-
     background-color: black;
-
     min-height: 65px;
-    width: 100%;
 }
 
 .nav {
     color: #00FF41;
     font-size: 25px;
     font-weight: 700;
-
-    margin-left: 6%;
-
+    margin-left: 200px;
     padding-top: 15px;
+    display: inline-block;
 }
 
 .nav2 {
     color: #00FF41;
-
-    margin-right: 6%;
+    display: inline-block;
+    margin-right: 100px;
 }
 
 .nav2 ul {
@@ -75,31 +60,18 @@ li:hover {
     color: #00FF41;
 }
 
-
-/* =========================
-   PROFILE IMAGE
-========================= */
-
 .img {
     display: flex;
     justify-content: center;
-
     margin-top: 90px;
-
-    width: 100%;
+    object-fit: cover;
 }
 
 #img1 {
     height: 240px;
     width: 225px;
-
-    max-width: 100%;
-    object-fit: cover;
-
     border-radius: 100px;
-
     opacity: inherit;
-
     border: 1px #00FF41 solid;
 }
 
@@ -108,16 +80,9 @@ li:hover {
     transition: 0.5s;
 }
 
-
-/* =========================
-   INTRO
-========================= */
-
 .content {
     color: white;
     width: 100%;
-
-    text-align: center;
 }
 
 #name {
@@ -145,43 +110,22 @@ li:hover {
     animation: blink 1s step-end infinite;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
-
 #contacttag {
     color: white;
     text-align: center;
-
     padding-top: 25px;
 }
 
 .icons {
     margin-top: 25px;
-
     padding: 10px;
-
     display: flex;
-
     gap: 15px;
-
     justify-content: center;
-    align-items: center;
-
-    width: 100%;
 }
 
 #linkedinicon,
-#githubicon,
-#mailicon,
-#mobileicon {
-    object-fit: contain;
-
-    max-width: 100%;
-}
-
-#linkedinicon {
+#githubicon {
     height: 30px;
     width: 30px;
 }
@@ -191,283 +135,95 @@ li:hover {
     width: 35px;
 }
 
-#mailicon {
-    background-color: white;
-
-    width: 30px !important;
-    height: 30px !important;
-
-    border-radius: 10px;
-}
-
-#mobileicon {
-    width: 35px !important;
-    height: 35px !important;
-}
-
 #linkedinicon:hover,
 #githubicon:hover,
 #mailicon:hover,
 #mobileicon:hover {
     transform: scale(1.1);
     color: #00ffff;
-
-    transition: 0.3s;
 }
-
-
-/* =========================
-   MAIN SECTION LAYOUT
-========================= */
 
 #aboutme,
 .skill,
 #experience,
 .projects {
-    width: 90%;
-    max-width: 1200px;
-
-    margin-left: auto;
-    margin-right: auto;
-
+    margin-left: 210px;
     margin-top: 120px;
 }
 
-
-/* =========================
-   SECTION LINES
-========================= */
-
 #aboutmeline {
     background-color: #00FF41;
-
     height: 2px;
     width: 160px;
+    margin-left: 210px;
 }
 
 #skill-line {
     background-color: #00FF41;
-
     height: 2px;
     width: 160px;
 }
 
 .exp {
     background-color: #00FF41;
-
     height: 2px;
     width: 130px;
 }
 
 .pro {
     background-color: #00FF41;
-
     height: 2px;
     width: 115px;
 }
 
-
-/* =========================
-   ABOUT ME
-========================= */
-
 .aboutmeclass {
+    height: 300px;
     width: 100%;
-
     display: flex;
-
     justify-content: center;
-
     gap: 20px;
-
-    align-items: stretch;
-
+    align-items: center;
     margin-top: 30px;
 }
 
 #professionalsummary,
 #education {
-    height: auto;
-
-    width: 50%;
-
-    min-width: 0;
+    height: 300px;
+    width: 600px;
 }
-
-#prof,
-#edu {
-    background-color: #00FF41;
-
-    padding: 18px;
-
-    border-radius: 10px 10px 0px 0px;
-
-    margin-bottom: 0px;
-}
-
-#prof-para,
-.edu-para {
-    background-color: black;
-
-    color: white;
-
-    padding: 18px;
-
-    margin-top: 0px;
-
-    border: 1px grey solid;
-
-    border-radius: 0px 0px 10px 10px;
-}
-
-.edu-content {
-    border-left: 3px solid #00b8ff;
-
-    padding: 0px 0px 0px 10px;
-}
-
-#edu-content2 {
-    margin-top: 20px;
-}
-
-
-/* =========================
-   SKILLS
-========================= */
-
-.skill {
-    overflow: hidden;
-}
-
-.skill-class {
-    width: 100%;
-
-    overflow: hidden;
-}
-
-.skill-badge {
-    padding: 10px 25px;
-
-    background: #10b9810d;
-
-    border: 1px solid rgba(0, 255, 65, .2);
-
-    color: #00FF41;
-
-    font-family: var(--font-mono);
-
-    font-size: 1rem;
-
-    cursor: default;
-
-    transition: all .3s ease;
-
-    white-space: nowrap;
-
-    flex-shrink: 0;
-}
-
-.skills-track {
-    display: flex;
-
-    gap: 2rem;
-
-    white-space: normal;
-
-    margin: 30px 0;
-
-    position: relative;
-
-    transform: translateX(0);
-
-    animation: none;
-
-    flex-wrap: wrap;
-
-    row-gap: 15px;
-
-    width: 100%;
-}
-
-
-/* =========================
-   EXPERIENCE
-========================= */
 
 .company {
     background-color: #00FF41;
-
-    padding: 2px 20px;
-
+    padding: 2px 2px 2px 20px;
     border-radius: 10px 10px 0px 0px;
-
-    width: 100%;
-
+    width: 1200px;
     margin-top: 30px;
+}
+
+.exp {
+    margin-top: 0px;
 }
 
 .company-content,
 .project-content {
-    width: 100%;
-
+    width: 1200px;
     background-color: black;
-
     color: white;
-
     padding: 0px 20px;
-
     border: 1px grey solid;
-
     border-top: none;
-
     border-radius: 0px 0px 10px 10px;
-
-    overflow-wrap: break-word;
 }
-
-.company-line {
-    background-color: grey;
-
-    height: 1px;
-
-    width: 100%;
-
-    margin-bottom: 10px;
-}
-
-.point {
-    background-color: white;
-
-    height: 6px;
-    width: 6px;
-
-    border-radius: 10px;
-
-    display: inline-block;
-
-    margin-right: 10px;
-}
-
-
-/* =========================
-   PROJECTS
-========================= */
 
 .source {
     display: flex;
-
     justify-content: space-between;
-
-    gap: 20px;
 }
 
 .sourcelink {
     margin: 10px;
-
     padding: 10px;
-
     border-radius: 10px;
-
     background-color: #00FF41;
 }
 
@@ -475,10 +231,85 @@ li:hover {
     cursor: pointer;
 }
 
+.company-line {
+    background-color: grey;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-/* =========================
-   FOOTER
-========================= */
+#prof,
+#edu {
+    background-color: #00FF41;
+    padding: 18px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+}
+
+#prof-para,
+.edu-para {
+    background-color: black;
+    color: white;
+    padding: 18px;
+    margin-top: 0px;
+    border: 1px grey solid;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.edu-content {
+    border-left: 3px solid #00b8ff;
+    padding: 0px 0px 0px 10px;
+}
+
+#edu-content2 {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.skill-class {
+    width: 100%;
+    overflow: hidden;
+}
+
+.skill-badge {
+    padding: 10px 25px;
+    background: #10b9810d;
+    border: 1px solid rgba(0, 255, 65, .2);
+    color: #00FF41;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    cursor: default;
+    transition: all .3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.skills-track {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    margin: 30px 0;
+    position: relative;
+
+    /* FIX: keep the complete skill list inside the page */
+    transform: translateX(0);
+    animation: none;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.point {
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
 
 .footer {
     margin-top: 190px;
@@ -486,215 +317,119 @@ li:hover {
 
 .footerline {
     background-color: grey;
-
     height: 1px;
-
     width: 100%;
-
     margin-bottom: 10px;
 }
 
 .footercontent {
     color: white;
-
     text-align: center;
 }
 
 
-/* =====================================================
-   LAPTOP
-===================================================== */
+/* ========================================================
+   LAPTOP SCREENS
+   ======================================================== */
 
 @media (max-width: 1400px) {
 
     .nav {
-        margin-left: 5%;
+        margin-left: 50px;
     }
 
     .nav2 {
-        margin-right: 5%;
+        margin-right: 50px;
     }
 
     #aboutme,
     .skill,
     #experience,
     .projects {
-        width: 90%;
+        margin-left: 5%;
+    }
 
-        margin-left: auto;
-        margin-right: auto;
+    #aboutmeline {
+        margin-left: 5%;
+    }
+
+    .aboutmeclass {
+        padding: 0 5%;
+    }
+
+    #professionalsummary,
+    #education {
+        width: 48%;
+    }
+
+    .company {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .company-content,
+    .project-content {
+        width: 90%;
+        margin-left: 5%;
     }
 }
 
 
-/* =====================================================
+/* ========================================================
    TABLET / MOBILE
-===================================================== */
+   ======================================================== */
 
 @media (max-width: 768px) {
 
     .header {
         flex-direction: column;
-
         align-items: center;
-
         position: static;
-
-        padding-bottom: 15px;
+        background-color: black;
     }
 
     .nav {
         margin-left: 0;
-
         padding-top: 10px;
     }
 
     .nav2 {
         margin-top: 15px;
-
         margin-right: 0;
-
-        width: 100%;
     }
 
     .nav2 ul {
         display: flex;
-
         flex-wrap: wrap;
-
         justify-content: center;
-
-        gap: 8px;
-
-        width: 100%;
+        padding: 0;
     }
-
-    li {
-        margin-right: 5px;
-    }
-
-
-    /* ABOUT */
 
     .aboutmeclass {
         flex-direction: column;
-
         height: auto;
-
-        width: 100%;
     }
 
     #professionalsummary,
     #education {
         width: 100%;
-
         height: auto;
-
         margin-bottom: 20px;
     }
 
-
-    /* EXPERIENCE / PROJECTS */
-
-    .company,
-    .company-content,
-    .project-content {
-        width: 100%;
-    }
-
-
-    /* PROJECT BUTTONS */
-
     .source {
         flex-direction: column;
-
-        gap: 0;
     }
 
     .sourcelink {
         width: 100%;
-
         margin-left: 0;
-
         margin-bottom: 10px;
     }
 
-
-    /* SKILLS */
-
     .skills-track {
         flex-wrap: wrap;
-
         gap: 10px;
-
         margin: 30px 0;
-    }
-}
-
-
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
-
-@media (max-width: 480px) {
-
-    .nav2 ul {
-        gap: 6px;
-    }
-
-    li {
-        margin-right: 3px;
-
-        font-size: 13px;
-    }
-
-
-    #img1 {
-        width: 190px;
-
-        height: 205px;
-    }
-
-
-    #name {
-        font-size: 30px;
-    }
-
-    #name1 {
-        font-size: 16px;
-    }
-
-    #institute {
-        font-size: 12px;
-
-        padding: 0 15px;
-    }
-
-
-    #aboutme,
-    .skill,
-    #experience,
-    .projects {
-        width: 92%;
-
-        margin-top: 80px;
-    }
-
-
-    .company-content,
-    .project-content {
-        padding: 0px 15px;
-    }
-
-
-    .skill-badge {
-        padding: 8px 15px;
-
-        font-size: 14px;
-    }
-
-
-    .footer {
-        margin-top: 100px;
     }
 }
