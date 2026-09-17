@@ -23,11 +23,25 @@
 
             <div class="nav2">
                 <ul>
-                    <li><a class="navigate" href="#">HOME</a></li>
-                    <li><a class="navigate" href="#mobileicon">ABOUT</a></li>
-                    <li><a class="navigate" href="#skill">SKILLS</a></li>
-                    <li><a class="navigate" href="#experience">EXPERIENCE</a></li>
-                    <li><a class="navigate" href="#projects">PROJECTS</a></li>
+                    <li>
+                        <a class="navigate" href="#">HOME</a>
+                    </li>
+
+                    <li>
+                        <a class="navigate" href="#mobileicon">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a class="navigate" href="#skill">SKILLS</a>
+                    </li>
+
+                    <li>
+                        <a class="navigate" href="#experience">EXPERIENCE</a>
+                    </li>
+
+                    <li>
+                        <a class="navigate" href="#projects">PROJECTS</a>
+                    </li>
 
                     <li>
                         <a
@@ -58,7 +72,9 @@
         <!-- INTRO -->
         <div class="content">
 
-            <h1 id="name">HI, I'M SOUNDAR</h1>
+            <h1 id="name">
+                HI, I'M SOUNDAR
+            </h1>
 
             <p id="name1">
                 Cybersecurity Enthusiast | Developer
@@ -88,7 +104,7 @@
                     <img
                         id="linkedinicon"
                         src="images/linkedin_img.png"
-                        alt="LinkedIn"
+                        alt="linkedin"
                     />
                 </a>
 
@@ -99,7 +115,7 @@
                     <img
                         id="githubicon"
                         src="images/github_img.png"
-                        alt="GitHub"
+                        alt="github"
                     />
                 </a>
 
@@ -110,7 +126,7 @@
                     <img
                         id="mailicon"
                         src="images/gmail_img.png"
-                        alt="Email"
+                        alt="gmail"
                     />
                 </a>
 
@@ -121,7 +137,7 @@
                     <img
                         src="images/mobile_img.png"
                         id="mobileicon"
-                        alt="Mobile"
+                        alt="mobile"
                     />
                 </a>
 
@@ -131,7 +147,7 @@
 
 
         <!-- ABOUT ME -->
-        <section>
+        <div>
 
             <h2 id="aboutme">
                 // ABOUT ME
@@ -192,7 +208,6 @@
 
                         </div>
 
-
                         <div
                             class="edu-content"
                             id="edu-content2"
@@ -222,13 +237,13 @@
 
             </div>
 
-        </section>
+        </div>
 
 
         <!-- SKILLS -->
         <div id="skill"></div>
 
-        <section class="skill">
+        <div class="skill">
 
             <h2>
                 &gt; SKILLS_MATRIX
@@ -258,11 +273,11 @@
 
             </div>
 
-        </section>
+        </div>
 
 
         <!-- EXPERIENCE -->
-        <section id="experience">
+        <div id="experience">
 
             <h2>
                 // EXPERIENCE
@@ -270,49 +285,68 @@
 
             <div class="exp"></div>
 
-            <div class="company">
+            <div>
 
-                <h4>
-                    Nxtlogic software solutions
-                </h4>
+                <div class="company">
 
-            </div>
+                    <h4>
+                        Nxtlogic software solutions
+                    </h4>
 
-            <div class="company-content">
+                </div>
 
-                <p class="role">
-                    AI & ML Intern
-                </p>
+                <div class="company-content">
 
-                <div class="company-line"></div>
+                    <p
+                        style="
+                        color:#00b8ff;
+                        font-size:20px;
+                        font-weight:800;
+                        "
+                    >
+                        AI & ML Intern
+                    </p>
 
-                <p>
+                    <div class="company-line"></div>
+
                     On-site, Coimbatore.
-                </p>
 
-                <p>
-                    <span class="point"></span>
-                    <strong>Core AI & ML Fundamentals:</strong>
-                    I gained practical exposure to the foundational concepts
-                    of Artificial Intelligence and Machine Learning, transitioning
-                    from basic theory to understanding how algorithms process data
-                    and recognize patterns.
-                </p>
+                    <br><br>
 
-                <p>
-                    <span class="point"></span>
-                    <strong>Real-World AI:</strong>
-                    Understood the basics of using machine learning models to build
-                    smart, proactive software.
-                </p>
+                    <p>
+
+                        <span class="point"></span>
+
+                        Core AI & ML Fundamentals:
+                        I gained practical exposure to the foundational concepts
+                        of Artificial Intelligence and Machine Learning, transitioning
+                        from basic theory to understanding how algorithms process data
+                        and recognize patterns.
+
+                    </p>
+
+                    <p>
+
+                        <span class="point"></span>
+
+                        Real-World AI:
+                        Understood the basics of using machine learning models to build
+                        smart, proactive software.
+
+                    </p>
+
+                </div>
 
             </div>
 
-        </section>
+        </div>
 
 
         <!-- PROJECTS -->
-        <section class="projects" id="projects">
+        <div
+            class="projects"
+            id="projects"
+        >
 
             <h2>
                 // PROJECTS
@@ -330,38 +364,57 @@
 
             <div class="project-content">
 
-                <p class="project-tech">
+                <p
+                    style="
+                    color:#00FF41;
+                    font-size:20px;
+                    padding-left:20px;
+                    "
+                >
                     React.js, FastAPI, mBERT, AI/ML Security
                 </p>
 
                 <div class="company-line"></div>
 
+                <br>
+
                 <p>
                     Award-winning browser extension architected for real-time
                     phishing detection and proactive threat defense.
                     Co-developed an intelligent scanning engine using mBERT
-                    to analyze and flag malicious domains. Secured 3rd prize
-                    for project presentation out of multiple state-level
-                    competitors.
+                    to analyze and flag malicious domains. Secured 3rd prize for
+                    project presentation out of multiple state-level competitors.
                 </p>
+
+                <br>
 
                 <div class="source">
 
                     <a
                         href="https://cybershield-admin-view.vercel.app/"
                         target="_blank"
+                        style="
+                        text-decoration:none;
+                        color:blue;
+                        font-weight:600;
+                        "
                     >
                         <button class="sourcelink">
-                            Live Demo (Dashboard) -&gt;
+                            Live Demo(Dashboard) ->
                         </button>
                     </a>
 
                     <a
                         href="https://github.com/soundar-codes/Cyber_Shield_Ai-final"
                         target="_blank"
+                        style="
+                        text-decoration:none;
+                        color:blue;
+                        font-weight:600;
+                        "
                     >
                         <button class="sourcelink">
-                            View Code -&gt;
+                            View Code ->
                         </button>
                     </a>
 
@@ -369,7 +422,7 @@
 
             </div>
 
-        </section>
+        </div>
 
 
         <!-- FOOTER -->
